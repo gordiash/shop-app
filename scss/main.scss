@@ -1,65 +1,7 @@
+@import "./cssReset.scss";
 @import "./mixins.scss";
 @import "./MainPage.scss";
+@import "./Navbar.scss";
+@import "./ItemCard.scss";
 
-*{
-    margin:0;
-    padding:0;
-}
 
-.Navbar{
-    width: 100%;
-    height: $navHeight;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background: black;
-    color: blanchedalmond;
-    position: fixed;
-    z-index: 100;
-}
-.Navbar__Brand{
-    width: 10%;
-    justify-content: start;
-    text-decoration: none;
-    font-size: 1.5em;
-}
-.Navbar__Menu{
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-}
-.Navbar__Menu--item{
-    width: 100px;
-    text-align: center;
-    text-decoration: none !important;
-    font-size: 1.5em;
-    color: blanchedalmond;
-}
-.Navbar__Menu__Login{
-    width: 20%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    
-}
-.Navbar__Menu__Login span{
-    font-size: 1.5em;
-    font-weight: 900;
-    margin-left: 10px;
-
-}
-.Navbar__Menu__Login--item{
-    width:30%;
-    font-size: 1.25em;
-    text-decoration: none !important;
-    color:ivory;
-    text-align: end;
-}
-
-.Shop__Menu{
-    width: 100%;
-    height: 100%;
-    background: black;
-    transition: all 0.5s ease-in-out;
-}

@@ -1,0 +1,66 @@
+.card{
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+    display: block;
+    margin: 20px 10px;
+    cursor: pointer;
+    
+    
+    &-header{
+        width: 100%;
+        height: 300px;
+        margin: 0 !important;
+        padding: 0 !important;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+       
+    }
+
+    &-body{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0!important;
+        padding: 10px !important;
+        justify-content: center;
+        background-color: $card-body;
+
+        h4{
+            width:100%;
+            font-size: $UU;
+        }
+        &-info{
+            display: flex;
+            justify-content: space-between;
+        }
+        &-price{
+            display: flex;
+            align-items: center;
+            width: 50%;
+            height: 100%;
+            font-size: $Uu;
+            font-weight: 500;
+        }
+        button{
+          width: 50px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          margin: 10px;
+          background-color: $mobile-item-hover;
+          color: white;
+          border: none;
+          border-radius: 20px 20px;
+        }
+
+    }
+    .material-icons{
+        font-size: 36px;
+        align-items: center;
+    }
+}

@@ -1,41 +1,44 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import ShopMenu from "./ShopMenu";
 
 export default function Navbar() {
-  const [toggleShopMenu, setToggleShopMenu] = useState(false);
+  const [toggleMenu, setToggleMenu] = useState(false);
+
+  const toggle = e => {
+    setToggleMenu(!toggleMenu);
+  };
 
   return (
-    <nav className="Navbar">
-      <div className="Navbar__Brand">LOGO</div>
-      <div className="Navbar__Menu">
-        <NavLink className="Navbar__Menu--item" to="/" exact>
-          Home
-        </NavLink>
-        <NavLink className="Navbar__Menu--item" to="/about">
-          About
-        </NavLink>
+    <React.Fragment>
+      <nav className="nav">
+        <button className="nav-button" onClick={toggle}>
+          <i className="material-icons">menu</i>
+        </button>
+        <div className="nav-brand">LOGO</div>
+        <div className="nav-login">
+            <i className="material-icons">account_circle</i>
+        </div>
+      </nav>
 
-        <NavLink to="/shop" className="Navbar__Menu--item">
-          Shop
-        </NavLink>
-
-        <NavLink className="Navbar__Menu--item" to="/contact">
-          Contact
-        </NavLink>
-
-        <div className="Navbar__Menu__Login">
-          <NavLink className="Navbar__Menu__Login--item" to="/login">
-            Log In
+      {toggleMenu && (
+        <div className="nav-mobile">
+          <NavLink to="/" className="nav-mobile__item" exact>
+            Home
           </NavLink>
-          <span>/</span>
-          <NavLink className="Navbar__Menu__Login--item" to="/sign-up">
-            Sign Up
+
+          <NavLink to="/about" className="nav-mobile__item">
+            About
+          </NavLink>
+
+          <NavLink to="/shop" className="nav-mobile__item">
+            Shop
+          </NavLink>
+
+          <NavLink to="/contact" className="nav-mobile__item">
+            Contact
           </NavLink>
         </div>
-      </div>
-
-      {toggleShopMenu ? <ShopMenu /> : null}
-    </nav>
+      )}
+    </React.Fragment>
   );
 }

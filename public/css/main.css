@@ -1,3 +1,50 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 .Banner {
   width: 100%;
   height: 100vh;
@@ -10,35 +57,93 @@
   .Banner__Content {
     background-attachment: scroll; }
   .Banner__Text {
-    width: 60%;
-    color: black;
-    background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(15px);
-    font-size: 5em;
+    width: 80%;
+    color: #07123A;
+    font-size: 3em;
     font-weight: 700;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     position: absolute;
-    top: 20%;
-    left: 20%; }
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px; }
   .Banner__Button {
     border: none;
     background-color: #388f2d;
     color: white;
     font-size: 1.5em;
-    padding: 10px;
+    padding: 15px;
     position: absolute;
-    top: 50%;
-    left: 45%; }
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px 30px;
+    width: 200px; }
 
 .Main {
-  width: 80%;
+  width: 100%;
   height: auto;
   border: 1px solid black;
   margin: 4em auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  box-sizing: border-box; }
+  background-color: #07123A; }
+
+.nav {
+  width: 100%;
+  background-color: #07123A;
+  color: #FFD4AA;
+  display: flex;
+  flex-wrap: wrap;
+  height: 4em;
+  align-items: center; }
+  .nav-button {
+    border: none;
+    background-color: #07123A;
+    color: #FFD4AA;
+    height: auto;
+    display: flex;
+    margin: 10px; }
+  .nav-brand {
+    width: 70%;
+    font-size: 2em;
+    text-align: center; }
+  .nav-mobile {
+    width: 250px;
+    height: 60%;
+    background-color: #07123A;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 4em;
+    left: 0px;
+    z-index: 1000;
+    animation: slide-in 1s ease-out; }
+    .nav-mobile__item {
+      text-align: center;
+      width: 100%;
+      height: auto;
+      line-height: 1.5;
+      font-size: 2em;
+      color: #FFD4AA;
+      padding: 10px; }
+    .nav-mobile__item:hover {
+      text-decoration: none;
+      color: #4F9F64; }
+  .nav-login {
+    width: 10%;
+    display: flex;
+    justify-items: center; }
+  .nav .material-icons {
+    font-size: 36px;
+    align-items: center; }
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-250px); }
+  100% {
+    transform: translateX(0px); } }
 
 .card {
   width: 350px;
@@ -49,7 +154,7 @@
   cursor: pointer; }
   .card-header {
     width: 100%;
-    height: 100%;
+    height: 300px;
     margin: 0 !important;
     padding: 0 !important; }
     .card-header img {
@@ -62,79 +167,32 @@
     flex-direction: column;
     margin: 0 !important;
     padding: 10px !important;
-    justify-content: center; }
+    justify-content: center;
+    background-color: #FFD4AA; }
     .card-body h4 {
-      width: 100%; }
+      width: 100%;
+      font-size: 2em; }
     .card-body-info {
       display: flex;
       justify-content: space-between; }
     .card-body-price {
+      display: flex;
       align-items: center;
       width: 50%;
       height: 100%;
-      font-size: 1.25em;
+      font-size: 1.5em;
       font-weight: 500; }
     .card-body button {
-      width: 35px;
-      height: 35px;
+      width: 50px;
+      height: 50px;
       display: flex;
       justify-content: center;
-      align-content: center; }
-
-* {
-  margin: 0;
-  padding: 0; }
-
-.Navbar {
-  width: 100%;
-  height: 4em;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  background: black;
-  color: blanchedalmond;
-  position: fixed;
-  z-index: 100; }
-
-.Navbar__Brand {
-  width: 10%;
-  justify-content: start;
-  text-decoration: none;
-  font-size: 1.5em; }
-
-.Navbar__Menu {
-  width: 80%;
-  display: flex;
-  justify-content: space-around; }
-
-.Navbar__Menu--item {
-  width: 100px;
-  text-align: center;
-  text-decoration: none !important;
-  font-size: 1.5em;
-  color: blanchedalmond; }
-
-.Navbar__Menu__Login {
-  width: 20%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-end; }
-
-.Navbar__Menu__Login span {
-  font-size: 1.5em;
-  font-weight: 900;
-  margin-left: 10px; }
-
-.Navbar__Menu__Login--item {
-  width: 30%;
-  font-size: 1.25em;
-  text-decoration: none !important;
-  color: ivory;
-  text-align: end; }
-
-.Shop__Menu {
-  width: 100%;
-  height: 100%;
-  background: black;
-  transition: all 0.5s ease-in-out; }
+      align-content: center;
+      margin: 10px;
+      background-color: #4F9F64;
+      color: white;
+      border: none;
+      border-radius: 20px 20px; }
+  .card .material-icons {
+    font-size: 36px;
+    align-items: center; }
