@@ -1,7 +1,8 @@
 @import "./cssReset.scss";
 @import "./mixins.scss";
-@import "./MainPage.scss";
+@import "./MainPage/MainPage.scss";
 @import "./Navbar.scss";
 @import "./ItemCard.scss";
-
-
+@import "./MainPage/Subscription.scss";
+@import "./MainPage/SectionAbout.scss";
+@import "./MainPage/Sugestions.scss";

@@ -1,0 +1,17 @@
+.section-sugestions {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+
+  &__title h2 {
+    font-size: $U;
+    text-transform: uppercase;
+  }
+}
+
+.sugestions-wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    
+}

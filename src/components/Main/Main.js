@@ -8,6 +8,17 @@ export default function Main() {
       <Banner />
 
       <div className="Main">
+    <h3 className="Main-title">Most popular products:</h3>
+
+      {window.innerWidth < 600
+      ?
+      <React.Fragment>
+        <ItemCard />
+        <ItemCard />
+        <ItemCard />
+        </React.Fragment>
+        :
+        <React.Fragment>
         <ItemCard />
         <ItemCard />
         <ItemCard />
@@ -16,6 +27,9 @@ export default function Main() {
         <ItemCard />
         <ItemCard />
         <ItemCard />
+        </React.Fragment>
+      }
+        
       </div>
     </React.Fragment>
   );
