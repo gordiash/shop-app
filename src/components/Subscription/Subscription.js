@@ -13,7 +13,7 @@ export default function Subscription() {
       <div className="subscription-widget__form">
         <input type="email" placeholder="Get updates, leave your email"></input>
         <button type="submit">
-            <i class="material-icons">send</i>
+            <i className="material-icons">send</i>
         </button>
         
       </div>

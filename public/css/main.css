@@ -248,7 +248,8 @@ table {
       text-transform: uppercase;
       font-weight: 700; }
     .subscription-widget__form input:focus, .subscription-widget__form input::placeholder {
-      color: white; }
+      color: white;
+      font-size: 0.85em; }
     .subscription-widget__form button {
       border: none;
       background-color: inherit; }
@@ -295,4 +296,27 @@ table {
 .sugestions-wrapper {
   width: 100%;
   height: auto;
-  display: flex; }
+  display: flex;
+  flex-direction: column; }
+
+.sugestion__card {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap; }
+  .sugestion__card img {
+    width: 75px;
+    height: 75px;
+    padding: 10px;
+    align-self: center; }
+  .sugestion__card--text {
+    height: auto;
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+    margin: 0; }
+  .sugestion__card--separetor {
+    border: 1px dashed black;
+    width: 80%;
+    justify-self: center; }
