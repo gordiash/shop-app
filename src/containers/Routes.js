@@ -1,6 +1,7 @@
 import React from 'react'
 import {Switch, Route} from 'react-router-dom'
 import Main from '../components/Main/Main'
+import Login from "../components/Auth/Login/Login"
 
 export default function Routes() {
     return (
@@ -10,6 +11,7 @@ export default function Routes() {
                 <Route path="/about" component={Main}/>
                 <Route path="/shop" component={Main}/>
                 <Route path="/contact" component={Main}/>
+                <Route path="/login" component={Login}/>
             </Switch>
         </div>
     )

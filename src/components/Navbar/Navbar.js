@@ -16,7 +16,10 @@ export default function Navbar() {
         </button>
         <div className="nav-brand">LOGO</div>
         <div className="nav-login">
-            <i className="material-icons">account_circle</i>
+        <NavLink to="/login">
+          <i className="material-icons">account_circle</i>
+        </NavLink>
+            
         </div>
       </nav>
 

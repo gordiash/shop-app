@@ -45,16 +45,15 @@
     width: 100%;
     height: auto;
     border: 1px solid black;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     background-color: $nav-bgc;
     &-title{
         color: $nav-color;
         font-size: $UU;
         margin: 20px;
     }
+    
 }
 
 

@@ -1,0 +1,40 @@
+.Login{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+   align-self: center;
+    
+    &__Form{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        height: 100%;
+        justify-items: center;
+
+        h3{
+            text-transform: uppercase;
+            margin-left: 15px;
+            font-size: 14px;
+        }
+
+        &__Field{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 10px;
+            label{
+                margin-left:14%;
+                width: 100%;
+            }
+            input{
+                border: 1px solid black;
+                height: 35px;
+                width: 300px;
+            }
+        }
+    }
+    
+}
