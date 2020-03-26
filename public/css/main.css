@@ -112,7 +112,14 @@ table {
   .nav-brand {
     width: 70%;
     font-size: 2em;
-    text-align: center; }
+    text-align: center;
+    color: #FFD4AA;
+    cursor: pointer; }
+    .nav-brand a {
+      color: #FFD4AA; }
+    .nav-brand a:hover {
+      text-decoration: none;
+      color: #FFD4AA; }
   .nav-mobile {
     width: 250px;
     height: 60%;
@@ -531,3 +538,26 @@ table {
         border: 1px solid black;
         height: 40px;
         width: 300px; }
+
+.empty {
+  width: 100%;
+  height: 100px; }
+
+.About {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+  .About__Introduction {
+    width: 100%;
+    height: 100%;
+    margin: 2em 0; }
+    .About__Introduction h3 {
+      margin: 2em;
+      font-size: 14px;
+      text-transform: uppercase; }
+    .About__Introduction-text {
+      padding: 20px; }
+  .About-image {
+    width: 100%; }

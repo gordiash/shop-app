@@ -1,0 +1,29 @@
+.empty{
+    width: 100%;
+    height: 100px;
+}
+
+.About{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+&__Introduction{
+    width: 100%;
+    height: 100%;
+    margin: $UU 0;
+    h3{
+        margin: $UU;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    &-text{
+        padding: 20px;
+    }
+}
+    &-image{
+        width: 100%;
+        
+    }
+}

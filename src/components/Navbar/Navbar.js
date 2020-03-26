@@ -14,7 +14,10 @@ export default function Navbar() {
         <button className="nav-button" onClick={toggle}>
           <i className="material-icons">menu</i>
         </button>
-        <div className="nav-brand">LOGO</div>
+        <div className="nav-brand">
+          <NavLink to="/" >LOGO</NavLink>
+        </div>
+        
         <div className="nav-login">
         <Link to="/login">
           <i className="material-icons">account_circle</i>

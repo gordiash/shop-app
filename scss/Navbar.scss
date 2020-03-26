@@ -1,81 +1,83 @@
-.nav{
-    width:100%;
+.nav {
+  width: 100%;
+  background-color: $nav-bgc;
+  color: $nav-color;
+  display: flex;
+  flex-wrap: wrap;
+  height: $navHeight;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+
+  &-button {
+    border: none;
     background-color: $nav-bgc;
-    color:$nav-color;
+    color: $nav-color;
+    height: auto;
     display: flex;
-    flex-wrap: wrap;
-    height: $navHeight;
-    align-items: center;
+    margin: 10px;
+  }
+  &-brand {
+    width: 70%;
+    font-size: 2em;
+    text-align: center;
+    color: $nav-color;
+    cursor: pointer;
+
+    a {
+      color: $nav-color;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: $nav-color;
+    }
+  }
+
+  &-mobile {
+    width: 250px;
+    height: 60%;
+    background-color: $nav-bgc;
+    display: flex;
+    flex-direction: column;
     position: fixed;
-    z-index: 100;
+    top: $navHeight;
+    left: 0px;
+    z-index: 1000;
+    animation: slide-in 1s ease-out;
 
-    &-button{
-        border: none;
-        background-color: $nav-bgc;
-        color:$nav-color;
-        height: auto;
-        display:flex;
-        margin: 10px;
-
-        
+    &__item {
+      text-align: center;
+      width: 100%;
+      height: auto;
+      line-height: 1.5;
+      font-size: 2em;
+      color: $nav-color;
+      padding: 10px;
     }
-    &-brand{
-        width: 70%;
-        font-size: 2em;
-        text-align: center;
+    &__item:hover {
+      text-decoration: none;
+      color: $mobile-item-hover;
     }
+  }
+  &-login {
+    width: 10%;
+    display: flex;
+    justify-items: center;
+  }
 
-    &-mobile{
-        width: 250px;
-        height: 60%;
-        background-color: $nav-bgc;
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        top: $navHeight;
-        left: 0px;
-        z-index: 1000;
-        animation: slide-in 1s ease-out;
-
-        &__item{
-            text-align: center;
-            width: 100%;
-            height: auto;
-            line-height: 1.5;
-            font-size: 2em;
-            color: $nav-color;
-            padding: 10px;
-        }
-        &__item:hover{
-            text-decoration: none;
-            color:$mobile-item-hover;
-        }
-    }
-    &-login{
-        width: 10%;
-        display: flex;
-        justify-items: center;
-    }
-
-
-
-    
-    .material-icons{
-        font-size: 36px;
-        align-items: center;
-    }
+  .material-icons {
+    font-size: 36px;
+    align-items: center;
+  }
 }
 
+@keyframes slide-in {
+  0% {
+    transform: translateX(-250px);
+  }
 
-
-
-@keyframes slide-in{
-    0%{
-        transform: translateX(-250px);
-    }
-    
-    100%{
-        transform: translateX(0px);
-    }
+  100% {
+    transform: translateX(0px);
+  }
 }
-
