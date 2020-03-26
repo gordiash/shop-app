@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -16,9 +16,9 @@ export default function Navbar() {
         </button>
         <div className="nav-brand">LOGO</div>
         <div className="nav-login">
-        <NavLink to="/login">
+        <Link to="/login">
           <i className="material-icons">account_circle</i>
-        </NavLink>
+        </Link>
             
         </div>
       </nav>

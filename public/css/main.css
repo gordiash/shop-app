@@ -424,3 +424,110 @@ table {
         border: 1px solid black;
         height: 40px;
         width: 300px; }
+
+.Register {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center; }
+  .Register__Form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 100%;
+    justify-content: center; }
+    .Register__Form__Footer {
+      width: 100%;
+      font-size: 14px;
+      display: flex;
+      justify-content: flex-start; }
+      .Register__Form__Footer a {
+        margin-top: 10px;
+        text-decoration: underline;
+        color: black;
+        margin-left: 30px; }
+    .Register__Form__Header {
+      width: 100%;
+      margin-left: 30px;
+      display: flex;
+      justify-content: start; }
+    .Register__Form button {
+      width: 300px;
+      height: 50px;
+      margin: 15px 0;
+      border: none;
+      background-color: #07123A;
+      color: #FFD4AA;
+      display: flex;
+      justify-content: space-between; }
+    .Register__Form h3 {
+      text-transform: uppercase;
+      font-size: 14px; }
+    .Register__Form__Field {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 10px; }
+      .Register__Form__Field label {
+        margin-left: 30px;
+        width: 100%; }
+      .Register__Form__Field input {
+        border: 1px solid black;
+        height: 40px;
+        width: 300px; }
+
+.Reset {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center; }
+  .Reset__Form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 100%;
+    justify-content: center; }
+    .Reset__Form__Footer {
+      width: 100%;
+      font-size: 14px;
+      display: flex;
+      justify-content: space-around; }
+      .Reset__Form__Footer a {
+        margin-top: 10px;
+        text-decoration: underline;
+        color: black; }
+    .Reset__Form__Header {
+      width: 100%;
+      margin-left: 30px;
+      display: flex;
+      justify-content: start; }
+    .Reset__Form button {
+      width: 300px;
+      height: 50px;
+      margin: 15px 0;
+      border: none;
+      background-color: #07123A;
+      color: #FFD4AA;
+      display: flex;
+      justify-content: space-between; }
+    .Reset__Form h3 {
+      text-transform: uppercase;
+      font-size: 14px; }
+    .Reset__Form__Field {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 10px; }
+      .Reset__Form__Field label {
+        margin-left: 30px;
+        width: 100%; }
+      .Reset__Form__Field input {
+        border: 1px solid black;
+        height: 40px;
+        width: 300px; }

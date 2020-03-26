@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
+
 
 export default function Login() {
     return (
@@ -28,8 +29,8 @@ export default function Login() {
                 <button type="submit">Sign in <i className="material-icons">asend</i></button>
 
                 <div className="Login__Form__Footer">
-                    <Link>Forgot password?</Link>
-                    <Link>Register an account</Link>
+                    <Link to="/reset-password">Forgot password?</Link>
+                    <Link to="/register">Register an account</Link>
                 </div>
             </form>
         </div>
