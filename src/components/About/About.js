@@ -12,6 +12,9 @@ export default function About() {
                 <div className="About-image">
                     <img src="https://picsum.photos/500" alt="some"/>
                 </div> 
+
+                <p className="About__Introduction-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi officiis repudiandae placeat ipsam, provident a similique veniam sed iusto ducimus dolores suscipit neque autem laudantium enim possimus hic facere nisi?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia magnam animi eaque fugiat, earum accusantium rem dolorum consectetur nisi hic voluptatem, vel deserunt natus? Fuga rerum officiis ipsam deleniti asperiores. </p>
                 </div>
         </section>
     )
