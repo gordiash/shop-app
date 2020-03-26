@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Login() {
     return (
@@ -8,7 +9,10 @@ export default function Login() {
 
 
             <form className="Login__Form">
+            <div className="Login__Form__Header">
             <h3>Sign in</h3>
+
+            </div>
 
                 <div className="Login__Form__Field">
                     <label>Email</label>
@@ -21,7 +25,12 @@ export default function Login() {
                 </div>
                
 
-                <button type="submit">Sign in</button>
+                <button type="submit">Sign in <i className="material-icons">asend</i></button>
+
+                <div className="Login__Form__Footer">
+                    <Link>Forgot password?</Link>
+                    <Link>Register an account</Link>
+                </div>
             </form>
         </div>
     )

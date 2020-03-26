@@ -384,10 +384,32 @@ table {
     flex-wrap: wrap;
     align-content: center;
     height: 100%;
-    justify-items: center; }
+    justify-content: center; }
+    .Login__Form__Footer {
+      width: 100%;
+      font-size: 14px;
+      display: flex;
+      justify-content: space-around; }
+      .Login__Form__Footer a {
+        margin-top: 10px;
+        text-decoration: underline;
+        color: black; }
+    .Login__Form__Header {
+      width: 100%;
+      margin-left: 30px;
+      display: flex;
+      justify-content: start; }
+    .Login__Form button {
+      width: 300px;
+      height: 50px;
+      margin: 15px 0;
+      border: none;
+      background-color: #07123A;
+      color: #FFD4AA;
+      display: flex;
+      justify-content: space-between; }
     .Login__Form h3 {
       text-transform: uppercase;
-      margin-left: 15px;
       font-size: 14px; }
     .Login__Form__Field {
       width: 100%;
@@ -396,9 +418,9 @@ table {
       justify-content: center;
       margin-bottom: 10px; }
       .Login__Form__Field label {
-        margin-left: 14%;
+        margin-left: 30px;
         width: 100%; }
       .Login__Form__Field input {
         border: 1px solid black;
-        height: 35px;
+        height: 40px;
         width: 300px; }

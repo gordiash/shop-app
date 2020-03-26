@@ -13,6 +13,7 @@ function App() {
       <header className="Header">
         <Navbar />
       </header>
+      
       <main>
         <Routes />
       </main>
