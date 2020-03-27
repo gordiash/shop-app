@@ -24,6 +24,10 @@
     color: $nav-color;
     cursor: pointer;
 
+    @media (min-width: 1024px){
+      width:85%;
+    }
+
     a {
       color: $nav-color;
     }
@@ -64,6 +68,11 @@
     width: 10%;
     display: flex;
     justify-items: center;
+
+    @media(min-width: 1024px){
+      display: flex;
+      justify-content: flex-end;
+    }
   }
 
   .material-icons {

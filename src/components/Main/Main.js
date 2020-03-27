@@ -13,7 +13,7 @@ export default function Main() {
       <div className="Main">
     <h3 className="Main-title">Most popular products:</h3>
 
-      {window.innerWidth < 600
+      {window.innerWidth < 420
       ?
       <React.Fragment>
         <ItemCard />

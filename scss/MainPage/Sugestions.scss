@@ -2,7 +2,6 @@
   width: 100%;
   height: 100%;
   margin-top: 50px;
-  
 
   &__title h2 {
     font-size: $U;
@@ -10,37 +9,51 @@
   }
 }
 
-.sugestions-wrapper{
-    width: 100%;
-    height: auto;
+.sugestions-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: $nav-bgc;
+  color: $nav-color;
+
+  @media(min-width: 1024px){
+   
     display: flex;
-    flex-direction: column;
-    background-color: $nav-bgc;
-  color:$nav-color;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
 }
-.sugestion__card{
+.sugestion__card {
   display: flex;
   width: 100%;
   height: auto;
-  flex-wrap:wrap;
-    img{
-      width: 100px;
-      height: 100px;
-      padding: 10px;
-      align-self: center;
-    }
-    &--text{
-      height: auto;
-      width: 70%;
-      padding: 10px;
-      text-align: center;
-      align-self: center;
-      margin:0;
-    }
-&--separetor{
-  border: 1px dashed $nav-color;
-  width: 80%;
-  justify-self: center;
-}
+  flex-wrap: wrap;
 
+  @media (min-width: 1024px) {
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    align-self: center;
+  }
+  &--text {
+    height: auto;
+    width: 70%;
+    padding: 10px;
+    text-align: center;
+    align-self: center;
+    margin: 0;
+  }
+  &--separetor {
+    border: 1px dashed $nav-color;
+    width: 80%;
+    justify-self: center;
+  }
 }
