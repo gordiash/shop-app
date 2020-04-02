@@ -5,7 +5,7 @@ export default function Contact() {
     <div className="Contact">
       <form className="Contact__Form">
         <div className="Contact__Form__Header">
-          <h3>Send a message</h3>
+          <h3>Contact Us</h3>
         </div>
         <div className="Contact__Form__Field">
           <label>First Name</label>

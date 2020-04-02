@@ -10,19 +10,18 @@ export default function Navbar() {
 
   return (
     <React.Fragment>
-      <nav className="nav">
+      <nav className=" nav">
         <button className="nav-button" onClick={toggle}>
           <i className="material-icons">menu</i>
         </button>
         <div className="nav-brand">
-          <NavLink to="/" >LOGO</NavLink>
+          <NavLink to="/">LOGO</NavLink>
         </div>
-        
+
         <div className="nav-login">
-        <Link to="/login">
-          <i className="material-icons">account_circle</i>
-        </Link>
-            
+          <Link to="/login">
+            <i className="material-icons">account_circle</i>
+          </Link>
         </div>
       </nav>
 

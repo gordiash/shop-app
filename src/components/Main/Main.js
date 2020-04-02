@@ -11,29 +11,28 @@ export default function Main() {
       <Banner />
 
       <div className="Main">
-    <h3 className="Main-title">Most popular products:</h3>
-
-      {window.innerWidth < 420
-      ?
-      <React.Fragment>
-        <ItemCard />
-        <ItemCard />
-        <ItemCard />
-        <ItemCard />
-        </React.Fragment>
-        :
-        <React.Fragment>
-        <ItemCard />
-        <ItemCard />
-        <ItemCard />
-        <ItemCard />
-        <ItemCard />
-        <ItemCard />
-        <ItemCard />
-        <ItemCard />
-        </React.Fragment>
-      }
-        
+        <h3 className="Main-title">Most popular products:</h3>
+        <div className="wrapper">
+          {window.innerWidth < 420 ? (
+            <React.Fragment>
+              <ItemCard />
+              <ItemCard />
+              <ItemCard />
+              <ItemCard />
+            </React.Fragment>
+          ) : (
+            <React.Fragment>
+              <ItemCard />
+              <ItemCard />
+              <ItemCard />
+              <ItemCard />
+              <ItemCard />
+              <ItemCard />
+              <ItemCard />
+              <ItemCard />
+            </React.Fragment>
+          )}
+        </div>
       </div>
 
       <section className="section-subscription">

@@ -87,21 +87,35 @@ table {
   width: 100%;
   height: auto;
   border: 1px solid black;
+  background-color: #07123A;
   display: flex;
   flex-wrap: wrap;
-  background-color: #07123A; }
-  @media (min-width: 1024px) {
-    .Main {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around; } }
+  justify-content: center; }
   .Main-title {
+    width: 100%;
     color: #FFD4AA;
-    font-size: 2em;
-    margin: 20px; }
+    font-size: 1.5em;
+    padding: 20px;
+    display: flex;
+    margin: 0; }
     @media (min-width: 1024px) {
       .Main-title {
         width: 100%; } }
+
+.wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0; }
+  @media (min-width: 1024px) {
+    .wrapper {
+      width: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; } }
 
 .nav {
   width: 100%;
@@ -121,7 +135,7 @@ table {
     display: flex;
     margin: 10px; }
   .nav-brand {
-    width: 70%;
+    width: 65%;
     font-size: 2em;
     text-align: center;
     color: #FFD4AA;
@@ -140,6 +154,7 @@ table {
     background-color: #07123A;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     position: fixed;
     top: 4em;
     left: 0px;
@@ -183,10 +198,6 @@ table {
   cursor: pointer;
   border: none !important;
   border-radius: 0; }
-  @media (max-width: 420px) {
-    .card {
-      width: 50%;
-      height: 50%; } }
   .card-header {
     width: 100%;
     height: 300px;
@@ -301,6 +312,7 @@ table {
   height: auto;
   margin-top: 50px; }
   .section-about__title h2 {
+    margin-left: 1em;
     font-size: 1em;
     text-transform: uppercase; }
 
@@ -337,6 +349,7 @@ table {
   height: 100%;
   margin-top: 50px; }
   .section-sugestions__title h2 {
+    margin-left: 1em;
     font-size: 1em;
     text-transform: uppercase; }
 
@@ -445,7 +458,15 @@ table {
       width: 100%;
       margin-left: 30px;
       display: flex;
-      justify-content: start; }
+      justify-content: start;
+      text-transform: uppercase;
+      font-size: 14px; }
+      @media (min-width: 1024px) {
+        .Login__Form__Header {
+          display: flex;
+          justify-content: center; }
+          .Login__Form__Header h3 {
+            font-size: 2em; } }
     .Login__Form button {
       width: 300px;
       height: 50px;
@@ -455,18 +476,19 @@ table {
       color: #FFD4AA;
       display: flex;
       justify-content: space-between; }
-    .Login__Form h3 {
-      text-transform: uppercase;
-      font-size: 14px; }
     .Login__Form__Field {
       width: 100%;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
       margin-bottom: 10px; }
       .Login__Form__Field label {
         margin-left: 30px;
         width: 100%; }
+        @media (min-width: 1024px) {
+          .Login__Form__Field label {
+            width: 25%;
+            justify-content: center; } }
       .Login__Form__Field input {
         border: 1px solid black;
         height: 40px;
@@ -490,6 +512,10 @@ table {
       font-size: 14px;
       display: flex;
       justify-content: flex-start; }
+      @media (min-width: 1024px) {
+        .Register__Form__Footer {
+          display: flex;
+          justify-content: center; } }
       .Register__Form__Footer a {
         margin-top: 10px;
         text-decoration: underline;
@@ -499,7 +525,15 @@ table {
       width: 100%;
       margin-left: 30px;
       display: flex;
-      justify-content: start; }
+      justify-content: start;
+      text-transform: uppercase;
+      font-size: 14px; }
+      @media (min-width: 1024px) {
+        .Register__Form__Header {
+          display: flex;
+          justify-content: center; }
+          .Register__Form__Header h3 {
+            font-size: 2em; } }
     .Register__Form button {
       width: 300px;
       height: 50px;
@@ -509,18 +543,19 @@ table {
       color: #FFD4AA;
       display: flex;
       justify-content: space-between; }
-    .Register__Form h3 {
-      text-transform: uppercase;
-      font-size: 14px; }
     .Register__Form__Field {
       width: 100%;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
       margin-bottom: 10px; }
       .Register__Form__Field label {
         margin-left: 30px;
         width: 100%; }
+        @media (min-width: 1024px) {
+          .Register__Form__Field label {
+            width: 25%;
+            align-content: center; } }
       .Register__Form__Field input {
         border: 1px solid black;
         height: 40px;
@@ -553,6 +588,12 @@ table {
       margin-left: 30px;
       display: flex;
       justify-content: start; }
+      @media (min-width: 1024px) {
+        .Reset__Form__Header {
+          display: flex;
+          justify-content: center; }
+          .Reset__Form__Header h3 {
+            font-size: 2em; } }
     .Reset__Form button {
       width: 300px;
       height: 50px;
@@ -562,18 +603,19 @@ table {
       color: #FFD4AA;
       display: flex;
       justify-content: space-between; }
-    .Reset__Form h3 {
-      text-transform: uppercase;
-      font-size: 14px; }
     .Reset__Form__Field {
       width: 100%;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
       margin-bottom: 10px; }
       .Reset__Form__Field label {
         margin-left: 30px;
         width: 100%; }
+        @media (min-width: 1024px) {
+          .Reset__Form__Field label {
+            width: 25%;
+            align-items: center; } }
       .Reset__Form__Field input {
         border: 1px solid black;
         height: 40px;
@@ -632,7 +674,13 @@ table {
     .Contact__Form__Header {
       width: 100%;
       text-align: left;
-      margin-left: 30px; }
+      margin-left: 30px;
+      text-transform: uppercase;
+      font-size: 14px; }
+      @media (min-width: 1024px) {
+        .Contact__Form__Header h3 {
+          text-align: center;
+          font-size: 2em; } }
     .Contact__Form__Field {
       width: 100%;
       display: flex;
@@ -663,6 +711,3 @@ table {
       color: #FFD4AA;
       display: flex;
       justify-content: space-between; }
-    .Contact__Form h3 {
-      text-transform: uppercase;
-      font-size: 14px; }

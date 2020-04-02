@@ -14,9 +14,9 @@ function App() {
         <Navbar />
       </header>
       
-      <main>
+     
         <Routes />
-      </main>
+      
      
 
 
